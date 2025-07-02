@@ -52,6 +52,7 @@ def login():
 
     user_id = data['user_id'].strip()
     password = data['password']
+    # export_universities_departments()  # 更新支持的大学和学院信息
 
     # 管理员登录
     if user_id.startswith(Config.ADMIN_ID_PREFIX):  # ADMIN_ID_PREFIX为管理员ID前缀，定义在config.py中

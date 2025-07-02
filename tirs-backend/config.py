@@ -13,13 +13,14 @@ class Config:
     ACADEMIC_WEIGHT = 50  # 学术特征权重
     PERSONALITY_WEIGHT = 50  # 性格特征权重
 
-    # 独立数据库路径（使用绝对路径，避免路径问题）
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # 获取项目根目录绝对路径
-    USER_DB_PATH = os.path.join(BASE_DIR, 'database/user_db.sqlite')  # 用户数据库路径
-    PROFESSOR_DB_PATH = os.path.join(BASE_DIR, 'database/professor_db.sqlite')  # 导师数据库路径
+    # 项目根目录路径（向上两级到 TIRS 目录）
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # 指向项目根目录
+    USER_DB_PATH = os.path.join(BASE_DIR, 'tirs-backend/database/user_db.sqlite')  # 用户数据库路径
+    PROFESSOR_DB_PATH = os.path.join(BASE_DIR, 'tirs-backend/database/professor_db.sqlite')  # 导师数据库路径
 
     # 支持的大学JSON文件路径（绝对路径）
-    SUPPORTED_UNIVERSITIES_JSON = os.path.join(BASE_DIR, 'database/supported_universities.json')
+    SUPPORTED_UNIVERSITIES_JSON = os.path.join(BASE_DIR, 'tirs-backend/database/supported_universities.json')
+    # SUPPORTED_UNIVERSITIES_JSON = os.path.join(BASE_DIR, 'tirs-fronted/public/supported_universities.json')
 
     # 导师基本信息URL文件路径
     PROFESSOR_INFO_URLS_JSONL = os.path.join(BASE_DIR, 'database/professor_info_urls.jsonl')
