@@ -1,0 +1,9 @@
+flask==2.3.2
+flask-cors==4.0.0
+requests==2.31.0
+spacy==3.7.2
+psutil==5.9.5
+bcrypt==4.0.1
+
+# 需要单独下载的中文模型
+# zh_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/zh_core_web_sm-3.7.0/zh_core_web_sm-3.7.0-py3-none-any.whl
