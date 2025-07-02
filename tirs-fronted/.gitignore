@@ -1,0 +1,83 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env*.local
+.env.development
+.env.test
+.env.production
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 新增部分👇
+# IDE配置
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 构建系统
+/dist
+.cache/
+.parcel-cache/
+.eslintcache
+
+# 依赖管理
+yarn.lock
+package-lock.json
+.yarn-integrity
+
+# 操作系统生成文件
+Thumbs.db
+Desktop.ini
+
+# 编辑器临时文件
+*.log
+*.tmp
+*.bak
+*.patch
+
+# 调试文件
+debug.log
+*.pid
+
+# 本地开发环境
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 压缩文件
+*.zip
+*.tar.gz
+
+# IDE特定文件（PyCharm）
+*.iml
+modules.xml
+workspace.xml
+
+# VS Code
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# 其他前端框架
+.cache-loader/
+.rollup.cache/
