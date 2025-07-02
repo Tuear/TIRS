@@ -5,6 +5,7 @@
 此外，本平台还提供留下评价以及管理员操作等相关功能
 
 ### 项目结构
+```bash
 基于评价的导师智能推荐系统/
 ├── .git/                    # 版本控制
 ├── LICENSE.txt              # MIT 许可证
@@ -69,6 +70,7 @@
     │
     ├── tailwind.config.js  # Tailwind CSS 配置
     └── package.json        # 前端依赖配置
+```
 
 ## 🚀 快速启动
 
