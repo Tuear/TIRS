@@ -23,7 +23,7 @@ class Config:
     # SUPPORTED_UNIVERSITIES_JSON = os.path.join(BASE_DIR, 'tirs-fronted/public/supported_universities.json')
 
     # 导师基本信息URL文件路径
-    PROFESSOR_INFO_URLS_JSONL = os.path.join(BASE_DIR, 'database/professor_info_urls.jsonl')
+    PROFESSOR_INFO_URLS_JSONL = os.path.join(BASE_DIR, 'tirs-backend/database/professor_info_urls.jsonl')
 
     # 用户角色定义（设计文档2.4.2）
     USER_ROLES = ('学生', '管理员')
@@ -34,8 +34,6 @@ class Config:
     # NLP模型配置
     NLP_MODEL_NAME = "zh_core_web_sm"  # 小型中文模型
 
-    # 导师URL
-    PROFESSOR_INFO_URLS_JSONL = os.path.join(BASE_DIR, 'database/professor_info_urls.jsonl')
 
     # NLP词典配置：学术特征词典
     ACADEMIC_TERMS = {
